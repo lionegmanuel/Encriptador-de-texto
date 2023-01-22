@@ -3,8 +3,10 @@ const button1 = document.getElementById("encriptarbutton"); //boton de encriptar
 const button2 = document.getElementById("desencriptarbutton"); //boton de desencriptar
 const button3 = document.getElementById("reiniciarbutton");
 const button4 = document.getElementById("copiarbutton");
+
 function validarinput(textref) {
-    if (textref==""||textref.length==0) {
+    const conditionInput = /^[a-z\s]*$/; //condicion que debe tener el texto ingresado = minusculas sin caracteres especiales ni numeros
+    if (textref==""||textref.length==0 || textref.toLowerCase() != textref || textref.search(conditionInput) ){
         alert("Por favor, ingrese un texto valido.")
         return false;  
     }
@@ -62,7 +64,6 @@ function encriptar() { //si aun no se encripto, el valor booleano sera verdadero
         let inputText = document.getElementById("inputText").value; //texto de ingreso por parte del usuario
         //proceso de cambio (encriptacion)
         if (validarinput(inputText)) {
-            inputText = inputText.toLowerCase(); //pasaje del texto a minuscula para no cometer errores al momento de encriptar
             let arbitraryText = ""; //cadena vacia para posteriormente concatenar con cada caracter correspondiente
             let encriptedText = replacesEncripted(inputText, arbitraryText);
             alert("¡TEXTO ENCRIPTADO!");    

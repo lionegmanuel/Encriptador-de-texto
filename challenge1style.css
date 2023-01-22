@@ -227,7 +227,7 @@ body {
     transition: color 0.5s;
 }
 #confirmationCopy {
-    border: solid #bfa20f 4px;
+    border: solid #bfa20f 2px;
     background: #03071c;
     color: #9eddf4;
     width: 100%;
