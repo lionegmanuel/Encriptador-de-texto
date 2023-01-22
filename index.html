@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>ENCRIPTADOR DE TEXTO</title>
+    
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="challenge1style.css">
+
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <section class="encabezado">
+                <h1 class="title-header">¡ENCRIPTADOR DE TEXTO!</h1>
+                <a href="guiadeuso.html" class="linkguiadeuso"><h4>GUIA - INSTRUCCIONES</h4></a>
+                <img src="candado.png" class="padlock" alt="candado">
+            </section>       
+        </header>
+        <div class="paginaprincipal">
+            <div class="zonatexto">
+                <label for="texto" class="titulocuadrodetexto">TEXTO:</label>
+                <textarea placeholder="Ingrese su texto aqui." cols="150" rows="20" id="inputText" class="textodeingreso" required></textarea>
+                <div class="buttons">
+                    <button type="submit"  class="button" id="encriptarbutton">ENCRIPTAR</button>
+                    <button type="submit"  class="button" id="desencriptarbutton">DESENCRIPTAR</button>    
+                    <button type="submit" class="restartButton" id="reiniciarbutton">REINICIAR</button>
+                </div>
+                
+            </div>
+
+            <section class="resultado">
+                <h4 class="tituloresultado">RESULTADO</h4>
+                <div id="arearesultado">
+                    <textarea readonly="readonly"  placeholder='"Resultado de ENCRIPTADO/DESENCRIPTADO"'id="textoresultado" ></textarea>
+                    
+                </div>
+                    <h4 id="confirmationCopy">¡Mensaje copiado al portapapeles!</h4>
+                    <button type="submit" class="copyButton" id="copiarbutton">¡COPIAR RESULTADO!</button>
+                    
+            </section>
+
+            </div>
+        </div>
+    </div>
+    <script src="challenge1.js"></script>
+</body>
+</html>

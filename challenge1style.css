@@ -1,0 +1,512 @@
+body {
+    background-color: #CCDCF5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contenedor {
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: auto;
+    height: 100%;
+}
+.encabezado {
+    display: flex;
+    height: 120px;
+    background-color: #062A49;
+    border: 3px solid black;
+    flex-wrap: nowrap;
+
+}
+.linkguiadeuso {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 30px;
+    word-spacing: 5%;
+    letter-spacing: 5%;
+    margin-top: 20px;
+}
+.linkguiadeuso:hover {
+    transform: scale(1.1);
+    color: rgb(140, 247, 247);
+    transition: 0.5s;
+}
+.title-header {
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: #fff;
+    /*margin-top: 2%;
+    margin-left: 10%;*/
+    margin: auto;
+    margin-left: 15%;
+    text-align: center; 
+    width: 90%;
+    justify-content: center;
+}
+.padlock {
+    height: 90px;
+    border-radius: 20%;
+    position: absolute;
+    left: 0;
+    margin: 15px 0 0 35px;
+}
+.paginaprincipal, .principal-useguide {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.resultado, .zonatexto {
+    display: inline-flex;
+    flex-flow: column;
+}
+.zonatexto {
+    height: 800px;
+}
+
+.titulocuadrodetexto {
+    position: absolute;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0 0 40px;
+
+}
+.textodeingreso {
+    width: 90%;
+    height: 50%;
+    background: #fff;
+    color: #000;
+    font-style: normal;
+    font-size: 30px;
+    margin: 80px 0 0px 30px;
+    padding: 20px;
+    transition: background 0.5s;
+}
+
+
+.textodeingreso:hover { 
+    background:#22353d ;
+    transition: background 0.5s;
+    color: #fff;
+}
+
+
+
+.textodeingreso::placeholder {
+    color: #555;
+}
+
+.textodeingreso:hover::placeholder {
+    color: rgb(182, 225, 228);
+    transition: color 0.3s;
+}
+.buttons {
+    display: inline-flex;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px 0 0 50px;
+    
+
+}
+
+.button {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #062A49;
+    color: #fff;
+    padding: 25px;
+    letter-spacing: 3px;
+    border: 3px dashed #000 ;
+    border-radius: 40px;
+    width: min-content ;
+    text-align: center;
+    margin: 30px 20px 30px 20px;
+
+
+}
+.button:hover {
+    transform: scale(1.1);
+    color: rgb(182, 225, 228);
+    transition: color 0.5s;
+}
+.restartButton {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        background: #062A49;
+        color: #fff;
+        padding: 25px;
+        letter-spacing: 3px;
+        border: 3px dashed #000 ;
+        border-radius: 40px;
+        width: min-content;
+        text-align: center;
+        margin: 30px 20px 30px 20px;
+
+}
+
+.restartButton:hover {
+    transform: scale(1.1);
+    color: rgb(182, 225, 228);
+    transition: color 0.5s;
+}
+
+
+
+
+/* ZONA DEL RESULTADO FINAL*/
+.resultado {
+    width: 70%;
+    height: 700px;
+    background-color: #77909C;
+    background: linear-gradient(330deg, #6492c3,#fff);
+    border: 10px double #063248 ;
+    padding: 20px;
+    flex-flow: column;
+    margin-left: 0;
+
+}
+.tituloresultado {
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #062A49;
+    margin: 10px 0 0 0;
+
+}
+#arearesultado {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    margin: 10px 0 0 0;
+}
+#textoresultado {
+    color: #fff;
+    background: #062A49;
+    width: 100%;
+    margin: 20px 5px 10px 5px;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+    padding: 30px;
+    z-index: 3;
+}
+
+#textoresultado::placeholder {
+    color: #9eddf4;
+    font-size: 35px;
+    font-style: oblique;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.copyButton {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #062A49;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 3px;
+    border: 3px dashed #000 ;
+    border-radius: 40px;
+    margin: 10px 0 0 0;
+}
+.copyButton:hover {
+    transform: scale(1.1);
+    color: rgb(182, 225, 228);
+    transition: color 0.5s;
+}
+#confirmationCopy {
+    border: solid #bfa20f 4px;
+    background: #03071c;
+    color: #9eddf4;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    opacity: 0%;
+
+    
+    
+}
+
+/* PAGINA GUIA DE USO*/
+
+.botonregresar {
+    color: #fff;
+    background-color: #79A8EF;
+    font-size: 30px;
+    font-style: italic;
+    font-family: cursive;
+    padding: 10px;
+    display: flex;
+    margin: 15px auto 40px auto;
+}
+.botonregresar:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.principal-useguide {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.parte-instrucciones {
+    width: auto;
+    margin-top: 6%;
+
+}
+.instrucciones {
+    font-size: 40px;
+    width: 65%;
+    color: #010A18;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;                          
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+
+}
+
+/* medias queries */
+@media screen and (max-width:1280px) {
+    body {
+        overflow-y: auto;
+    }
+    #contenedor {
+        width: 100%;
+    }
+    .encabezado {
+        width: auto;
+        flex-wrap: nowrap;
+    }
+    .title-header {
+        margin-left: 18%;
+        font-size: 50px;
+    }
+    .linkguiadeuso {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .zonatexto {
+        height: 600px;
+    }
+    .buttons {
+        width: auto;
+        margin-left: 20px;
+    }
+    .textodeingreso {
+        width: 80%;
+        font-size: 30px;
+    }
+    .resultado {
+        height: 500px;
+        width: 100%;
+    }
+    #textoresultado::placeholder {
+        font-size: 30px;
+    }
+    .button, .restartButton {
+        margin: 10px 5px 10px 5px;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .copyButton {
+        font-size: 22px;
+    }
+    .instrucciones {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:970px) {
+    #contenedor {
+        width: 100%;
+    }
+    .encabezado {
+        width: 100%
+    }
+    .textodeingreso {
+        width: 75%;
+    }
+    .encabezado {
+        flex-wrap: wrap;
+    }
+
+    .title-header {
+        font-size: 40px;
+        margin: 30px 0 0 50px;
+    }
+    .linkguiadeuso {
+        font-size: 20px;
+        margin-left: 70%;
+        margin-top: -5px;
+    }
+
+    .resultado {
+        width: 100%;
+    }
+    .zonatexto {
+        display: inline-block;
+    
+    }
+    .button {
+        margin: 10px 0px 10px 0px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .buttons {
+        width: 20%;
+        display: inline-flex;
+        flex-flow: row ;
+        margin-left: 20px;
+    }
+    .botonregresar {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #contenedor {
+        width: 100%;
+    }
+    .encabezado {
+        width: 100%;
+    }
+
+    .zonatexto {
+        display: inline-flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+  
+    .padlock {
+        height: 70px;
+        border-radius: 20%;
+        margin: 25px 0 0 30px;
+    }
+
+    .paginaprincipal {
+    display: inline-block;
+    }
+    .textodeingreso {
+        width: 70%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .titulocuadrodetexto {
+        margin: 10px 0 10px 40%;
+    }
+    .title-header {
+        margin-left: 20%;
+        font-size: 30px;
+    }
+    .linkguiadeuso {
+        margin-left: 65%;
+        margin-top: 5px;
+    }
+    .buttons {
+        display: inline-flex;
+        margin: 20px 30px 40px 60px;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .button, .restartButton {
+        margin: 10px 10px 30px 10px;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .resultado {
+        width: auto;
+        display: flex;
+    }
+    .tituloresultado {
+        font-size: 35px;
+    }
+    .copyButton {
+        font-size: 25px;
+        padding: 15px;
+        margin: auto;
+    }
+    #confirmationCopy {
+        margin: 0 0 10px 0;
+    }
+    .instrucciones {
+        font-size: 25px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    #contenedor {
+        width: 100%;
+    }
+    .encabezado {
+        width: 100%;
+    }
+    .padlock {
+        height: 60px;
+        border-radius: 20%;
+        margin: 35px 0 0 25px;
+    }
+    .titulocuadrodetexto {
+        margin: 10px 0 10px 35%;
+        font-size: 22px;
+    }
+    .linkguiadeuso {
+        margin-left: 55%;
+        margin-top: 5px;
+    }
+    .buttons{
+        display: inline-block;
+    }
+    .button, .restartButton {
+        margin: 5px 0px 0px 0px;
+        padding: 10px;
+    }
+    .botonregresar {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 470px) {
+    #contenedor {
+        width: 100%;
+    }
+    .encabezado {
+        width: 100%;
+    }
+    .padlock {
+        margin-left: 10px;
+    }
+    .title-header {
+        font-size: 25px;
+    }
+    .linkguiadeuso {
+        font-size: 15px;
+    }
+    .button, .restartButton {
+        margin: 10px 0px 0px 0px;
+        padding: 8px;
+    }
+    .tituloresultado {
+        font-size: 30px;
+    }
+    .copyButton {
+        padding: 10px;
+    }
+}
