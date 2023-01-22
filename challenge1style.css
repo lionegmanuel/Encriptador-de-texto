@@ -267,7 +267,7 @@ body {
 
 }
 .instrucciones {
-    font-size: 40px;
+    font-size: 30px;
     width: 65%;
     color: #010A18;
     padding: 6px;
@@ -328,7 +328,7 @@ body {
         font-size: 22px;
     }
     .instrucciones {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -446,7 +446,7 @@ body {
         margin: 0 0 10px 0;
     }
     .instrucciones {
-        font-size: 25px;
+        font-size: 15px;
     }
 
 
