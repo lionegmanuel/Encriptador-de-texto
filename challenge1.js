@@ -24,15 +24,15 @@ function replacesEncripted(inputTextRef, newTextRef ) { //funcion que reemplaza 
     for (let i=0; i<inputTextRef.length;i++) {
         let letter = inputTextRef.charAt(i); //actualizacion de la letra a recorrer de forma constante
         if (letter=="a") {
-            letter="enter"
+            letter="ai"
             newTextRef+=letter;
         }
         else if (letter=="e") {
-            letter="imes"
+            letter="enter"
             newTextRef+=letter;
         }
         else if (letter=="i") {
-            letter="ai"
+            letter="imes"
             newTextRef+=letter;
         }
         else if (letter=="o") {
@@ -50,9 +50,9 @@ function replacesEncripted(inputTextRef, newTextRef ) { //funcion que reemplaza 
     return newTextRef; //resultado=texto encriptado
 }
 function replacesDesencripted(inputTextRef, newTextRef ) { //funcion que reemplaza los caracteres por sus llaves en DESENCRIPTADO
-    newTextRef = inputTextRef.replaceAll("enter","a");
-    newTextRef = newTextRef.replaceAll("imes","e");
-    newTextRef = newTextRef.replaceAll("ai","i");
+    newTextRef = inputTextRef.replaceAll("ai","a");
+    newTextRef = newTextRef.replaceAll("enter","e");
+    newTextRef = newTextRef.replaceAll("imes","i");
     newTextRef = newTextRef.replaceAll("ober","o");
     newTextRef = newTextRef.replaceAll("ufat","u");
     return newTextRef; //resultado=texto encriptado
